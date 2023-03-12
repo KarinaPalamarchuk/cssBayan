@@ -1,0 +1,63 @@
+
+body{
+    margin: 0px;
+    background: #e3e0cc;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+     }
+
+.Bayan {
+    color: #070000;
+    font-weight: bold;
+    padding-left: 95px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.container {
+margin: 0 90px; 
+}
+
+
+.tab {
+    background: #e3e0cc;
+    border-radius: 3px;
+    margin-bottom: 10 px;
+    text-transform: uppercase;
+}
+
+.tab-title {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+} 
+
+
+
+
+.checkbox, .min, .tab-content{
+    display: none;
+}
+
+.checkbox:checked ~ .tab-title .plas {
+    display: none;
+}
+
+.checkbox:checked ~ .tab-title .min {
+    display: block;
+}
+
+
+.checkbox:checked ~ .tab-content {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;  
+    overflow: hidden;
+}
